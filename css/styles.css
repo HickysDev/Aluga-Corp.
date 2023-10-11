@@ -81,7 +81,8 @@ nav {
     background-image: url("/img/banner.jpg");
     background-size: cover;
     background-position: center;
-    padding: 10rem 0;
+    padding: 15rem 0;
+    
 }
 
 .main-banner h1,
@@ -90,10 +91,12 @@ nav {
     text-align: center;
     font-weight: bold;
     text-shadow: #000 3px 2px 3px;
+    font-family: 'Gabarito', sans-serif;
 }
 
 .main-banner h1 {
-    font-size: 54px;
+    font-size: 70px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .main-banner p {
@@ -311,4 +314,50 @@ footer {
     padding-bottom: 50px;
     color: #fff;
     background-color: #413134;
+}
+
+/* Responsividade */
+
+/* Laptop */
+
+@media  (max-width: 1100px) {
+    .zonas-container{
+        width: 95%;
+    }
+
+    .zona {
+        margin: 0 5px;
+    }
+}
+
+/* Celular */
+
+@media  (max-width: 576px) {
+
+    .navbar-itens li {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .zona{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .zonas-container{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .zonas-container ul {
+    margin-top: 2rem;
+    }
+    .services-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .services-container ul {
+        flex-direction: column;
+    }
 }
